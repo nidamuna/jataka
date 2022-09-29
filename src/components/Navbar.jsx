@@ -1,10 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from '../assets/JATAKA.png';
 
 const Navbar = () => {
+  const [navbar, setNavbar]=useState(false)
+
+  
+  useEffect(() => {
+    const changeBackground = () => {
+      if(window.scrollY >= 102) {
+        setNavbar(true)
+      } else {
+        setNavbar(false)
+      }
+    }
+    window.addEventListener('scroll', changeBackground);
+
+    return() => {
+      window.removeEventListener('scroll', changeBackground);
+    }
+  }, []);
+  
   return (
     <div>
-      <div className="w-[100%] h-auto px-[96px] py-[50px] flex justify-between z-50">
+      <div className={navbar ? 
+        "inset-0 w-[100%] h-auto px-[96px] py-[20px] flex justify-between bg-[#14181D]" 
+        : "inset-0 w-[100%] h-auto px-[96px] py-[20px] flex justify-between"}>
         <div className="flex items-center justify-center">
           <img src={Logo} alt="Jataka" />
           <div>
@@ -30,8 +50,8 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        <div className="justify-end">
-          <button className="flex mt-[22px] justify-center py-[12px] px-[59px] text-white font-medium text-[16px] leading-[19px] rounded-lg bg-[#D21919] gap-[10px]">
+        <div className="justify-end flex items-center">
+          <button className="flex justify-center py-[12px] px-[59px] text-white font-medium text-[16px] leading-[19px] rounded-lg bg-[#D21919] gap-[10px]">
             START EXPLORING
           </button>
         </div>
