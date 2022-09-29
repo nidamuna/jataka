@@ -9,10 +9,9 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
-      <div className="-mt-[170px] sticky top-0">
+      <div className="-mt-[170px] sticky top-0 z-40">
         <Navbar />
       </div>
-
       <Video />
       <Content1 />
       <Content2 />
