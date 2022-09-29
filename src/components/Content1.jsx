@@ -4,7 +4,7 @@ import Temple from '../assets/Temple.png';
 const Content1 = () => {
   return (
     <div className="w-[100%] h-auto inset-0 bg-forest-image bg-cover bg-no-repeat py-[107px] px-[90px]">
-      <div className="flex grid grid-cols-2 gap-x-[135px]">
+      <div className="grid grid-cols-2 gap-x-[135px]">
         <div className="flex justify-center items-center">
           <img src={Temple} alt="temple" />
         </div>
