@@ -3,16 +3,16 @@ import Cyber from '../assets/Cyber.png';
 
 const Content2 = () => {
   return (
-    <div className="w-[100%] h-auto inset-0 bg-lake-image bg-cover bg-no-repeat py-[107px] px-[90px]">
-      <div className="flex grid grid-cols-2 gap-x-[135px]">
+    <div className="w-screen h-screen inset-0 bg-lake-image bg-cover bg-no-repeat px-[50px] py-20 flex items-center">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-x-[135px] justify-center items-center mx-auto overflow-hidden">
         <div className="flex flex-col justify-center items-start">
-          <h1 className="text-[40px] leading-[48px] font-medium text-[#D21919] mb-[22px]">
-            Create
+          <h1 className="lg:text-[40px] sm:text-[30px] lg:leading-[48px] mb-[22px] font-medium text-[#D21919]">
+              Create
           </h1>
-          <h1 className="text-[48px] text-white leading-[58px] font-medium mb-[22px]">
+          <h1 className="lg:text-[48px] sm:text-[38px] text-white lg:leading-[58px] mb-[22px] font-medium">
             Create Your Own Avatar
           </h1>
-          <p className="text-[20px] leading-[24px] text-white font-medium">
+          <p className="lg:text-[20px] sm:text-[16px] lg:first:leading-[24px] text-white font-medium">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id
             imperdiet pharetra fringilla turpis ullamcorper faucibus cras.
             Ridiculus mi cras nibh id purus.
@@ -21,8 +21,8 @@ const Content2 = () => {
             Explore
           </button>
         </div>
-        <div className="flex justify-center items-center">
-          <img src={Cyber} alt="temple" />
+        <div className="flex justify-center items-center pt-8">
+          <img src={Cyber} alt="cyber" />
         </div>
       </div>
     </div>
