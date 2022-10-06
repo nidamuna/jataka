@@ -30,8 +30,8 @@ const Navbar = () => {
       <div
         className={
           navbar
-            ? 'inset-0 w-full h-auto px-[96px] py-[20px] flex justify-between bg-[#14181D]'
-            : 'inset-0 w-full h-auto px-[96px] py-[20px] flex justify-between'
+            ? 'inset-0 w-full h-auto lg:px-[96px] px-[36px] py-[20px] flex justify-between bg-[#14181D]'
+            : 'inset-0 w-full h-auto lg:px-[96px] px-[36px] py-[20px] flex justify-between'
         }
       >
         <div className="flex items-center justify-center">
@@ -76,7 +76,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? 'fixed right-0 top-0 w-[40%] h-full border-r bg-black/30'
+            ? 'fixed right-0 top-0 w-screen h-full border-r bg-black/90 px-5'
             : 'fixed right-[-100%]'
         }
       >
