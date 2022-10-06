@@ -1,5 +1,4 @@
 import './App.css';
-import React from 'react';
 import Navbar from './components/Navbar';
 import Video from './components/Video';
 import Content1 from './components/Content1';
@@ -9,7 +8,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div>
-      <div className="-mt-[170px] sticky top-0 z-40 ">
+      <div className="-mt-[170px] sticky top-0 z-40">
         <Navbar />
       </div>
       <Video />
