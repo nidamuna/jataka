@@ -3,14 +3,14 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className="bg-[#14181D] w-screen md:h-auto h-screen md:py-[90px] flex items-center">
-      <div className="grid md:grid-cols-2 sm:grid-cols-1 items-start lg:px-[96px] px-[66px]">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 items-start lg:px-[96px] md:px-[66px] px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-start">
           <div className="flex">
             <h1 className="text-white uppercase leading-[44px] text-[36px] sm:text-[30px] font-bold">
               jataka
             </h1>
           </div>
-          <div className="grid grid-cols-3 lg:-ml-[70px] gap-[120px] lg:mt-0 mt-10 lg:mt-0 ml-0 text-[14px] lg:text-[16px]">
+          <div className="grid grid-cols-3 lg:-ml-[70px] md:gap-[120px] gap-4 lg:mt-0 mt-10 ml-0 text-[14px] lg:text-[16px]">
             <div>
               <ul>
                 <li className="font-medium leading-[19px] text-white mb-[12px]">
