@@ -9,9 +9,10 @@ const Video = () => {
           Welcome to Jataka
         </h1>
         <p className="text-white lg:text-[20px] text-[16px] font-mendium leading-[24px] mb-[22px]">
-          World first Metaverse for Heritage cultural object preservation
+          Create your own space and interact with others in a more meaningful way through the metaverse. Each Jataka space is unique; 
+          allowing you to create your own avatar, design the environment around you, and meet like-minded people near and far.
         </p>
-        <button className="flex mt-[22px] justify-center py-[12px] px-[59px] text-white font-medium text-[16px] leading-[19px] rounded-lg bg-[#D21919] gap-[10px] w-[160px]">
+        <button className="flex mt-[22px] justify-center py-[12px] px-[59px] text-white font-medium text-[16px] leading-[19px] rounded-lg bg-[#D2AC69] gap-[10px] w-[160px]">
           Explore
         </button>
       </div>

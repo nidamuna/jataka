@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import Logo from '../assets/JATAKA.png';
+import React, { useEffect, useState } from 'react';   
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
@@ -30,12 +29,16 @@ const Navbar = () => {
       <div
         className={
           navbar
-            ? 'inset-0 w-full h-auto lg:px-[96px] px-[36px] py-[20px] flex justify-between bg-[#14181D]'
+            ? 'inset-0 w-full h-auto lg:px-[96px] px-[36px] py-[20px] flex justify-between bg-[#06332C]'
             : 'inset-0 w-full h-auto lg:px-[96px] px-[36px] py-[20px] flex justify-between'
         }
       >
         <div className="flex items-center justify-center">
-          <img src={Logo} alt="Jataka" className={!nav ? 'flex' : 'hidden'} />
+          <img
+             className={!nav ? "w-[176px] h-[88px] flex" : 'hidden'}
+             src={require('../assets/lineLogo.svg').default}
+             alt="/"
+          />
           <div>
             <ul className="lg:flex flex-row justify-center items-center ml-[40px] hidden">
               <li className="text-white text-[16px] leading-[19px] ml-[16px] font-medium uppercase">
@@ -60,7 +63,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="justify-end flex items-center">
-          <button className="lg:flex justify-center py-[12px] px-[59px] text-white font-medium text-[16px] leading-[19px] rounded-lg bg-[#D21919] gap-[10px] hidden">
+          <button className="lg:flex justify-center py-[12px] px-[59px] text-white font-medium text-[16px] leading-[19px] rounded-lg bg-[#D2AC69] gap-[10px] hidden">
             START EXPLORING
           </button>
           <button
@@ -69,24 +72,28 @@ const Navbar = () => {
               nav ? 'hidden' : 'flex justify-center text-white lg:hidden'
             }
           >
-            <AiOutlineMenu size={20} />
+            <AiOutlineMenu size={40} />
           </button>
         </div>
       </div>
       <div
         className={
           nav
-            ? 'fixed right-0 top-0 w-screen h-full border-r bg-black/90 px-5'
+            ? 'fixed right-0 top-0 w-screen h-full border-r bg-[#06332C]/90 px-5'
             : 'fixed right-[-100%]'
         }
       >
         <div className="flex flex-row justify-between">
-          <h1 className="w-full text-2xl font-bold text-white m-4">JATAKA</h1>
+          <img
+             className="w-[176px] h-[88px] flex"
+             src={require('../assets/lineLogo.svg').default}
+             alt="/"
+          />
           <span
             onClick={handleNav}
             className="cursor-pointer w-full text-xl font-bold text-white flex items-center justify-end mr-4"
           >
-            <AiOutlineClose size={15} />
+            <AiOutlineClose size={35} />
           </span>
         </div>
         <ul className="uppercase p-4">
@@ -110,7 +117,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className=" items-center flex justify-center">
-          <button className="flex w-[130px] justify-center py-[12px] text-white font-medium text-[12px] leading-[19px] rounded-lg bg-[#D21919]">
+          <button className="flex w-[130px] justify-center py-[12px] text-white font-medium text-[12px] leading-[19px] rounded-lg bg-[#D2AC69]">
             START EXPLORING
           </button>
         </div>
